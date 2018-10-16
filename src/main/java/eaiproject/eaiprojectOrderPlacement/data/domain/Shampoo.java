@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Shampoo {
 	
-	@Id @GeneratedValue
+	@Id
 	private Integer shampoo_id;
 	private String name;
 	private String brand;
