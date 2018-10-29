@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 import eaiproject.eaiprojectOrderPlacement.data.domain.Order;
 
-public interface OrderPlacementRepository extends JpaRepository<Order, Integer>{
+public interface OrderRepository extends JpaRepository<Order, Integer>{
 	
 	public List<Order> findOrderssByTrackingId(@Param("order_id") Integer transactionId);
 }
