@@ -11,5 +11,5 @@ import eaiproject.eaiprojectOrderPlacement.data.domain.Order;
 
 public interface OrderRepository extends JpaRepository<Order, Integer>{
 	
-	public List<Order> findOrderssByTrackingId(@Param("order_id") Integer transactionId);
+	public List<Order> findOrdersByOrderId(@Param("order_id") Integer OrderId);
 }
